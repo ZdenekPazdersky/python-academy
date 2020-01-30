@@ -1,4 +1,4 @@
-# ###Todo
+# ###2do
 # #In the Python window you already have Mercedes and Rolls-Royce prices listed (don't forget to covert string to integer!). In addition, you have to create a variable that will ask the user for the extra cost. Then you will need to calculate:
 # The price for two Mercedes,
 # The Mercedes and Rolls-Royce prices,

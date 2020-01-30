@@ -1,4 +1,4 @@
-###########Todo
+###########2do
 # Again, use results from previous task. Add following:
 
 # print names on index from 2 to 5 introducing it with a string: 'In interval from 2 to 5 is:',

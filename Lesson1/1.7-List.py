@@ -1,4 +1,4 @@
-#Todo
+#2do
 # Create script, which will:
 #
 # assign an empty list to variable candidates,

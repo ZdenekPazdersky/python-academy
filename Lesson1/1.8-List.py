@@ -1,6 +1,6 @@
 
 ####################
-# Todo
+# 2do
 # We continue to work with the list, with the code from the previous task. Write a script, that will:
 
 # remove the 'Bruno' element from the candidates list,

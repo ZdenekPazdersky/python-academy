@@ -1,4 +1,4 @@
-##########Todo
+##########2do
 # In Python window you already have conversion rates. Create variables with amount of units to convert and variables with calculation.
 #
 # Your task is to convert:
