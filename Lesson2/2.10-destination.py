@@ -29,11 +29,12 @@ DISCOUNT_25 = ['Svitavy', 'Ostrava']
 
 # Get data from variables based on user's input
 destination = DESTINATIONS[selection-1]
-if destination in DISCOUNT_25:
-    print('We have a discount')
-price = PRICES[selection-1]
-
 # Calculate the price and check whether discount applicable for the selected destination
+if destination in DISCOUNT_25:
+    print('We have a 25% discount for you...')
+    price = PRICES[selection - 1] * 0.75
+else:
+    price = PRICES[selection - 1]
 
 # Introduce registration
 
@@ -43,33 +44,33 @@ print('=' * 40)
 surname = input('SURNAME: ')
 print('=' * 40)
 birth_year = input('YEAR of BIRTH: ')
-birth_year=int(birth_year)
-if 2020-birth_year < 15:
-    print('We cannot place discount for people younger than 15.')
-else:
-    print('Your are over 15, we can continue.')
 print('=' * 40)
 email = input('EMAIL: ')
-#char_at = '@'
-if '@' in email:
-    print('Email is correct')
-else:
-    print('Missing @ in your email!')
 print('=' * 40)
 password = input('PASSWORD: ')
-
-numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-if len(password)<=8 or password[-1] in numbers or password[0] in numbers:
-    print('Invalid characters')
 print('=' * 80)
 
 # Check if the user is older than 15 years old
-
+birth_year = int(birth_year)
+if 2020-birth_year < 15:
+        print('We cannot place discount for people younger than 15.')
 # Check if email contains @ symbol
-
+#char_at = '@'
+elif '@' not in email:
+        print('Missing @ in your email!')
 # Check if password
 # - is at least 8 chars long,
 # - doesn't begin and end with a number
 # - and contains both letters and numbers
 
+elif (len(password) < 8
+      or password[-1].isnumeric() or password[0].isnumeric()
+      or password.isnumeric() or password.isalpha()
+):
+    print('Invalid characters')
+
 # Thank user by the input name and inform him/her about the reservation made
+else:
+        print('Thank you ' + str(name))
+        print('Your reservation has been done successful!')
+        print('Total price is ' + str(price))
