@@ -23,6 +23,7 @@ def change_coins(number):
             number -= coins[index] * division_result
     return result
 
+
 print(change_coins(1376))
 
 # ###ENGETO solution
