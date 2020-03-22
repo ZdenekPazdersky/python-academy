@@ -8,7 +8,7 @@
 string_1 = input('Enter comma separeted numbers between '', followed by pressing ENTER:')
 #print(string_1)
 string_1 = string_1.split(',')  #split into list
-#print(string_1)
+print(string_1)
 result = []
 for index in string_1:
    index = int(index.strip())  #removed spaces and changed to integer
